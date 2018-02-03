@@ -1,0 +1,185 @@
+.container {
+    height: auto;
+    margin-top: 40px;
+}
+
+.lp-banner {
+    position: relative;
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden
+}
+
+.lp-banner::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.lp-banner:after {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    display: block;
+    height: 100px;
+    width: 100%;
+    z-index: 8999;
+    background-color: transparent;
+    background-image: linear-gradient(to top, #f2f2f2, rgba(242, 242, 242, 0))
+}
+
+.lp-banner__content {
+    position: relative;
+    height: 100%;
+    color: #fff
+}
+
+.lp-banner__content .banner-heading {
+    color: #fff;
+    margin-bottom: 0.5em;
+    line-height: 1.25;
+    font-size: 22px;
+    letter-spacing: 0;
+    font-family: "FFScubaWebBold", arial, sans-serif
+}
+
+@media screen and (min-width: 23.4375em) {
+    .lp-banner__content .banner-heading {
+        font-size: 28px
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .lp-banner__content .banner-heading {
+        font-size: 42px
+    }
+}
+
+.lp-banner__content .banner-heading span {
+    color: blue
+}
+
+.lp-banner__content .banner-copy {
+    font-size: 16px;
+    color: blue;
+    font-family: "FFScubaWebMedium", arial, sans-serif;
+    margin-bottom: 1.5em;
+    letter-spacing: 0;
+    line-height: 1.5
+}
+
+.lp-banner__content .container::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.lp-banner__content .btn,
+.lp-banner__content .wpcf7-submit {
+    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 15px
+}
+
+@media screen and (min-width: 23.4375em) {
+    .lp-banner__content .btn,
+    .lp-banner__content .wpcf7-submit {
+        width: auto
+    }
+}
+
+a.lp-banner__scroll-down-button {
+    position: absolute;
+    bottom: 3.375rem;
+    left: 50%;
+    z-index: 9000;
+    width: 3.75rem;
+    height: 3.75rem;
+    border: 2px solid white;
+    border-radius: 3.75rem;
+    padding: 0;
+    transform: translateX(-50%) rotate(90deg);
+    background: transparent
+}
+
+a.lp-banner__scroll-down-button i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%)
+}
+
+a.lp-banner__scroll-down-button i:before {
+    font-size: 1.25rem;
+    color: white
+}
+
+a.lp-banner__scroll-down-button:hover {
+    background: rgba(0, 0, 0, 0.3)
+}
+
+a.lp-banner__scroll-down-button.disabled {
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    cursor: default
+}
+
+span.home-banner-below-anchor {
+    width: 100%;
+    float: left;
+    height: 0
+}
+
+.lp-banner__inside {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 8001;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    width: auto;
+    padding-right: 1.5em
+}
+
+.lp-banner__inside:last-child {
+    margin-right: 0
+}
+
+@media screen and (min-width: 64.0625em) {
+    .lp-banner__inside {
+        width: 100%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%
+    }
+    .lp-banner__inside:last-child {
+        margin-right: 0
+    }
+}
+
+.lp-banner__image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%
+}
+
+.lp-banner__image:last-child {
+    margin-right: 0
+}
+
+span.home-banner-below-anchor {
+    width: 100%;
+    float: left;
+    height: 0
+}

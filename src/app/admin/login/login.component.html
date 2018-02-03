@@ -1,0 +1,33 @@
+<!-- <form class="example-form" [formGroup]="rForm" (ngSubmit)="Login(rForm.value)">
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="email" value="admin@firebase.com" type="text" formControlName="email" email>
+
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="password" value="firebase" formControlName="password" type="password">
+    </mat-form-field>
+    <button mat-raised-button [disabled]="!rForm.valid" color="primary">login</button>
+</form>
+                
+Form login -->
+<form [formGroup]="rForm" (ngSubmit)="Login(rForm.value)">
+    <p class="h5 text-center mb-4">Sign in</p>
+
+    <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="text" id="defaultForm-email" class="form-control" formControlName="email">
+        <label for="defaultForm-email">Your email</label>
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="password" id="defaultForm-pass" class="form-control" formControlName="password">
+        <label for="defaultForm-pass">Your password</label>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-default" [disabled]="!rForm.valid">Login</button>
+    </div>
+</form>
+<!-- Form login -->

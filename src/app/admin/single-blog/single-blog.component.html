@@ -1,0 +1,29 @@
+<div *ngIf='post | async; let post; else loading;'>
+    <p>
+        {{post.title }}
+    </p>
+    <p>
+        {{post.content }}{{id}}
+    </p>
+</div>
+<ng-template #loading>Loading User Data...</ng-template>
+
+<button (click)="Back()">back</button>
+<a [routerLink]="['edit/'+id]">edit</a>
+
+<div *ngIf='post | async'>
+    <form>
+        <label for="name">upoal</label>
+        <img [src]='img' />
+
+
+        <input type="path" [(ngModel)]='path' id="path" name="path" required>
+        <br>
+
+        <input type="title" [(ngModel)]='title' id="title" name="title" required><br>
+        <label for="contactnumber">content</label>
+        <textarea [(ngModel)]='content' name='content' type="text" required></textarea>
+        <label for="contactnumber">subtitle</label>
+        <textarea [(ngModel)]='subtitle' name='subtitle' type="text" required></textarea>
+        <button (click)='edit()'>edit</button></form>
+</div>

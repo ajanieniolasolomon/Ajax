@@ -1,0 +1,15 @@
+{
+    "short_name": "Ajani",
+    "name": "Ajani",
+    "start_url": "/",
+
+    "icons": [{
+        "src": "/assets/me.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "theme_color": "#f48c5b",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait"
+}

@@ -1,0 +1,14 @@
+<form>
+    <label for="name">upoal</label>
+
+
+
+    <input type="file" [(ngModel)]='img' id="img" name="img" required>
+    <br>
+    <label for="universityname">Title</label>
+    <input type="title" [(ngModel)]='title' id="title" name="title" required><br>
+    <label for="contactnumber">subtitle</label>
+    <textarea id='message' [(ngModel)]='subtitle' name='subtitle' type="text" required></textarea>
+    <label for="contactnumber"> content</label>
+    <textarea id='message' [(ngModel)]=' content' name=' content' type="text" required></textarea>
+    <button (click)='onAddsubmit()'>click</button></form>

@@ -1,0 +1,62 @@
+<div class="container">
+
+    <!--Grid row-->
+
+    <!--Section: Blog v.1-->
+    <section class="py-4 text-center text-lg-left">
+
+        <!--Section heading-->
+        <h1 class="h1 font-bold text-center mb-5 pt-4 animated  swing">My Blog Posts</h1>
+        <!--Section description-->
+
+
+        <!--Grid row-->
+        <div class="row " *ngFor="let todo of posts ">
+
+            <!--Grid column-->
+            <div class="col-lg-5 col-xl-5 pb-3 ">
+                <!--Featured image-->
+                <div class="view overlay hm-white-slight rounded z-depth-2 ">
+                    <img [src]="todo.imageurl" alt="loading****" class="img-fluid">
+                    <a>
+                        <div class="mask"></div>
+                    </a>
+                </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-7 col-xl-7 animated slideInRight">
+                <!--Excerpt-->
+                <a href="" class="green-text">
+                    <h6 class="font-bold pb-1">
+                        <i class="fa fa-code" aria-hidden="true"></i>Code</h6>
+                </a>
+                <h3 class="mb-4 font-bold dark-grey-text">
+                    <strong>{{todo.title}}</strong>
+                </h3>
+                <p>{{todo.subtitle}}</p>
+                <p>by
+                    <a>
+                        <strong>Ajani Eniola</strong>
+                    </a>
+                </p>
+                <a class="btn btn-success btn-md mb-3 " [routerLink]="['blog/'+todo.id]">Read more</a>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <hr class="mb-5 mt-5 pb-3">
+
+
+        <!--Grid row-->
+
+
+
+    </section>
+
+</div>
+
+<app-navbar *ngIf="showSpinner"></app-navbar>

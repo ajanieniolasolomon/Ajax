@@ -1,0 +1,29 @@
+.adjust {
+    margin-top: 40px;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+}
+
+h2 {
+    font-weight: bolder;
+    color: wheat;
+    line-height: 1.25;
+    font-size: 22px;
+    letter-spacing: 0;
+    font-family: Courier New;
+    font-style: oblique;
+}
+
+h5 {
+    font-size: 16px;
+    color: #e2c10d;
+    font-family: "FFScubaWebMedium", arial, sans-serif;
+    margin-bottom: 1.5em;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+
+span {
+    color: #e2c10d;
+}

@@ -1,0 +1,77 @@
+<!--<div *ngIf='post | async; let post; else loading;'>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title> {{post.title }}</mat-card-title>
+            <mat-card-subtitle> {{post.subtitle }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="img" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                {{post.content }}
+            </p>
+        </mat-card-content>
+
+    </mat-card>
+</div>
+<ng-template #loading>Loading User Data...</ng-template>
+
+<button (click)="Back()">back</button>
+
+<figure class="fit" *ngIf='post | async; let post; else loading;'>
+    <div>
+        <h2><span>{{post.title | uppercase }}<span class='spacer'></span><br /><span class='spacer'></span>{{post.subtitle }}</span>
+        </h2>
+    </div>
+    <img [src]="img" alt="Photo of a Shiba Inu" width="200" height="200" />
+
+    <figcaption class="me">{{post.content }}</figcaption>
+</figure>
+<ng-template #loading>Loading User Data...</ng-template>
+
+<button (click)="Back()">back</button>-->
+<!--Section: Blog v.4-->
+<section class="section pt-5 mt-4 pb-3">
+
+    <!--Grid row-->
+    <div class="row">
+        <div class="col-md-12 m" *ngIf='post | async; let post;'>
+            <!--Featured image-->
+            <div class="card card-cascade wider reverse">
+                <div class="view overlay hm-white-slight">
+                    <img [src]="img" alt="Wide sample post image">
+                    <a>
+                        <div class=""></div>
+                    </a>
+                </div>
+
+                <!--Post data-->
+                <div class="card-body text-center">
+                    <h2>
+                        {{post.title | uppercase }}
+                    </h2>
+                    <p>{{post.subtitle }}</p>
+
+                    <!--Social shares-->
+
+
+                </div>
+                <!--Post data-->
+            </div>
+
+            <!--Excerpt-->
+            <div class="excerpt mt-5">
+                <p> {{post.content }} </p>
+
+
+            </div>
+        </div>
+    </div>
+    <!--Grid row-->
+    <a class="btn-floating btn-lg purple waves-light" (click)="Back()" mdbRippleRadius><i class="fa fa-send-o"></i></a>
+    <hr class="mb-5 mt-4">
+
+    <!--Grid row-->
+
+
+</section>

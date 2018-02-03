@@ -1,0 +1,60 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark bg-purple " [containerInside]="false">
+    <logo>
+        <a class="logo navbar-brand animated bounce " href="#"><strong>Ajani🤑</strong></a>
+    </logo>
+    <links class="animated swing">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="">Blog</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="/about">About Me</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="/contact">Contact Me</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link">works</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" href="https://github.com/ajanieniolasolomon"><i class="fa fa-github"></i></a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a routerLink="/slack" class="nav-link"><i class="fa fa-slack"></i></a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link " href="https://twitter.com/ajani_eniola?lang=en"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a href="https://www.linkedin.com/in/ajani-eniola-12981511b/" class="nav-link"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link "><i class="fa fa-google-plus"></i></a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
+<!-- Main -->
+<main>
+
+    <router-outlet></router-outlet>
+
+
+</main>
+<!--Footer-->
+<footer class="page-footer purple center-on-small-only">
+
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2018 Copyright: <a>SwidaTech</a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
